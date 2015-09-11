@@ -1,0 +1,32 @@
+.grid__container{
+    height: 1800px;
+}
+
+.grid__row{
+    height: 100%;
+}
+
+.grid__col{
+    height: 100%;
+    background: red;
+    background-clip: content-box;
+    width: 40px; /* work around phantomjs rounding down 9.9 to 9 */
+}
+
+@media (min-width: 768px){
+    .grid__col{
+        width: 63px; /* work around phantomjs rounding down 9.9 to 9 */
+    }
+}
+
+@media (min-width: 992px){
+    .grid__col {
+        width: 81px;
+    }
+}
+
+@media (min-width: 1200px){
+    .grid__col {
+        width: 98px;
+    }
+}
