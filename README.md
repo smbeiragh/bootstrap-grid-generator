@@ -1,3 +1,3 @@
 # bootstrap-grid-generator
 
-Bootstrap3 grid template generator for designers
+Bootstrap3 grid themplate generator for designers
