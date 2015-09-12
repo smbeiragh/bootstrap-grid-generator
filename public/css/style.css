@@ -10,23 +10,39 @@
     height: 100%;
     background: red;
     background-clip: content-box;
+}
+
+.grid__container--fixed .grid__col:nth-child(even){
+    width: 40px; /* work around phantomjs rounding down 9.9 to 9 */
+}
+
+.grid__container--fixed .grid__col:nth-child(odd){
     width: 40px; /* work around phantomjs rounding down 9.9 to 9 */
 }
 
 @media (min-width: 768px){
-    .grid__col{
-        width: 63px; /* work around phantomjs rounding down 9.9 to 9 */
+    .grid__container--fixed .grid__col:nth-child(even){
+        width: 62px; /* work around phantomjs rounding down 9.9 to 9 */
+    }
+    .grid__container--fixed .grid__col:nth-child(odd){
+        width: 61px; /* work around phantomjs rounding down 9.9 to 9 */
     }
 }
 
 @media (min-width: 992px){
-    .grid__col {
+    .grid__container--fixed .grid__col:nth-child(even) {
         width: 81px;
+    }
+    .grid__container--fixed .grid__col:nth-child(odd) {
+        width: 80px;
     }
 }
 
 @media (min-width: 1200px){
-    .grid__col {
+    .grid__container--fixed .grid__col:nth-child(even) {
+        width: 97px;
+    }
+    .grid__container--fixed .grid__col:nth-child(odd) {
         width: 98px;
     }
 }
